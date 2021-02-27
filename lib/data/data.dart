@@ -1,10 +1,9 @@
-
 import 'package:shopping_app/models/categorie_model.dart';
 import 'package:shopping_app/models/product_model.dart';
 import 'package:shopping_app/models/trending_productmodel.dart';
 
 List<TrendingProductModel> getTrendingProducts() {
-  List<TrendingProductModel> trendingProducts = new List<TrendingProductModel>();
+  List<TrendingProductModel> trendingProducts = [];
   TrendingProductModel productModel = new TrendingProductModel();
   //1
   productModel.storename = "Store Name";
@@ -41,8 +40,9 @@ List<TrendingProductModel> getTrendingProducts() {
 
   return trendingProducts;
 }
-List<ProductModel> getProducts(){
-  List<ProductModel> products = new List();
+
+List<ProductModel> getProducts() {
+  List<ProductModel> products = [];
   ProductModel productModel = new ProductModel();
   //1
   productModel.productName = "Special  gift card";
@@ -94,8 +94,9 @@ List<ProductModel> getProducts(){
   productModel = new ProductModel();
   return products;
 }
-List<CategorieModel> getCategories(){
-  List<CategorieModel> categories = new List();
+
+List<CategorieModel> getCategories() {
+  List<CategorieModel> categories = [];
   CategorieModel categorieModel = new CategorieModel();
   //1
   categorieModel.categorieName = "Regular Gift";
